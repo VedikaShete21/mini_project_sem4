@@ -92,7 +92,7 @@ export default function ProfilePage() {
                             onChange={(e) => setUrl(e.target.value)}
                             className="p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
                         />
-                        <button className="bg-purple-600 hover:bg-purple-700 py-2 rounded font-semibold transition">
+                        <button onClick={() => window.location.href = `http://localhost:5173?url=${encodeURIComponent(url)}`} className="bg-purple-600 hover:bg-purple-700 py-2 rounded font-semibold transition">
                             Analyze Website
                         </button>
                     </div>
